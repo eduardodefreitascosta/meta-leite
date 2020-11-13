@@ -13,9 +13,8 @@
 /Resultado
 /Output
 .Rmd
-*/gabi_semina.R
-*/gabi_semina.r
 *.Rmd
 *.rmd
 *.Rproj
 *.docx
+*main.R

@@ -4,7 +4,7 @@
 rm(list = ls())
 
 #Packages to be used
-packages<-c("readxl","here","tidyverse","ggplot2","meta","metafor","knitr","glmmsr","plotly","gridExtra","grid","ggridges","ggthemes","summarytools","ggcorrplot")
+packages<-c("readxl","here","tidyverse","ggplot2","meta","metafor","knitr")
 
 
 # Install packages not yet installed
