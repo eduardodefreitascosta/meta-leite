@@ -1,7 +1,21 @@
 
-library(meta)
-library(metafor)
-library(here)
+
+#Reset the envoronment
+rm(list = ls())
+
+#Packages to be used
+packages<-c("readxl","here","tidyverse","ggplot2","meta","metafor","knitr","glmmsr","plotly","gridExtra","grid","ggridges","ggthemes","summarytools","ggcorrplot")
+
+
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# Packages loading
+invisible(lapply(packages, library, character.only = TRUE))
+
 
 
 meta<-read.csv(here("Data","meta.csv"),sep=";")
@@ -24,22 +38,21 @@ teste4<-paste(sub4$Estudo," ","et al.", "(",sub4$ano,")", sep="")
 meta_sub1<-metaprop(sub1$Res,sub1$Total,teste1,sm="plogit",method.tau= "DL", incr=0.5)
 
 png(file=here("Figures","pen.png"),
-    width=600, height=350)
+    width = 500, height = 225, units='mm', res = 300)
 forest(meta_sub1,slab=teste1, xlim=c(0,1),xlab="Prevalence",comb.fixed=F, print.I2 =T,hetlab="Heterogeneity : ",print.pval.Q=F, leftlabs = c("Study, year", "Positive", "Total"),rightlabs = c("Prevalence [95% CI]  Weight"),margin = c(0,0,0, 0))
 dev.off()
 
 meta_sub2<-metaprop(sub2$Res,sub2$Total,teste2,sm="plogit",method.tau= "DL", incr=0.5)
 
-png(file=here("Figures","amp.png"),
-    width=600, height=350)
+png(file=here("Figures","amp.png"), width = 500, height = 225, units='mm', res = 300)
 forest(meta_sub2,slab=teste2, xlim=c(0,1),xlab="Prevalence",comb.fixed=F, print.I2 =T,hetlab="Heterogeneity : ",print.pval.Q=F, leftlabs = c("Study, year", "Positive", "Total"),rightlabs = c("Prevalence [95% CI]  Weight"),margin = c(6,12,4, 10))
 dev.off()
 
 
 meta_sub3<-metaprop(sub3$Res,sub3$Total,teste3,sm="plogit",method.tau= "DL", incr=0.5)
 
-png(file=here("Figures","cefa.png"),
-    width=600, height=350)
+png(file=here("Figures","cefa.png"), 
+    width = 500, height = 225, units='mm', res = 300)
 forest(meta_sub3,slab=teste3, xlim=c(0,0.1),xlab="Prevalence",comb.fixed=F, print.I2 =T,hetlab="Heterogeneity : ",print.pval.Q=F,  leftlabs = c("Study, year", "Positive", "Total"),rightlabs = c("Prevalence [95% CI]  Weight"),margin = c(6,12,4, 10))
 dev.off()
 
@@ -49,7 +62,7 @@ dev.off()
 meta_sub4<-metaprop(sub4$Res,sub4$Total,teste4,sm="plogit",method.tau= "DL", incr=0.5)
 
 png(file=here("Figures","oxa.png"),
-    width=600, height=350)
+    width = 500, height = 225, units='mm', res = 300)
 forest(meta_sub4,slab=teste4, xlim=c(0,0.2),xlab="Prevalence",comb.fixed=F, print.I2 =T,hetlab="Heterogeneity : ",print.pval.Q=F,  leftlabs = c("Study, year", "Positive", "Total"),rightlabs = c("Prevalence [95% CI]  Weight"),margin = c(6,12,4, 10))
 dev.off()
 
