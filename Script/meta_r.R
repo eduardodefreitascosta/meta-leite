@@ -1,27 +1,9 @@
 
 
-#Reset the envoronment
-rm(list = ls())
-
-#Packages to be used
-packages<-c("readxl","here","tidyverse","ggplot2","meta","metafor","knitr")
-
-
-# Install packages not yet installed
-installed_packages <- packages %in% rownames(installed.packages())
-if (any(installed_packages == FALSE)) {
-  install.packages(packages[!installed_packages])
-}
-
-# Packages loading
-invisible(lapply(packages, library, character.only = TRUE))
-
-
-
+#Import data
 meta<-read.csv(here("Data","meta.csv"),sep=";")
 
-##meta subgrupos###
-
+##meta subgroups###
 sub1<-subset(meta,meta$ATB=="Pen")
 sub2<-subset(meta,meta$ATB=="Amp")
 sub3<-subset(meta,meta$ATB=="Cefa")
@@ -33,7 +15,7 @@ teste3<-paste(sub3$Estudo," ","et al.", "(",sub3$ano,")", sep="")
 teste4<-paste(sub4$Estudo," ","et al.", "(",sub4$ano,")", sep="")
 
 
-##facil metaprop##
+##Metaprop##
 
 meta_sub1<-metaprop(sub1$Res,sub1$Total,teste1,sm="plogit",method.tau= "DL", incr=0.5)
 
@@ -69,7 +51,7 @@ dev.off()
 
 
 
-##regres?o_penicilina##
+##regression_penicilin##
 res1_ano<-rma(xi=sub1$Res,mi=sub1$Nao_Resistentes,mods=~sub1$ano,measure="PLO", method="DL")
 res1_metodo<-rma(xi=sub1$Res,mi=sub1$Nao_Resistentes,mods=~factor(sub1$Metodo),measure="PLO", method="DL")
 res1_Mastite<-rma(xi=sub1$Res,mi=sub1$Nao_Resistentes,mods=~factor(sub1$Mastite),measure="PLO", method="DL")
@@ -78,7 +60,7 @@ res1_pais<-rma(xi=sub1$Res,mi=sub1$Nao_Resistentes,mods=~factor(sub1$Pais),measu
 
 res1<-rma(xi=sub1$Res,mi=sub1$Nao_Resistentes,mods=~factor(sub1$set)+factor(sub1$Metodo),measure="PLO", method="DL")
 
-##regress?o_ampicilina##
+##regression_ampicilin##
 res2_ano<-rma(xi=sub2$Res,mi=sub2$Nao_Resistentes,mods=~sub2$ano,measure="PLO", method="DL")
 res2_metodo<-rma(xi=sub2$Res,mi=sub2$Nao_Resistentes,mods=~factor(sub2$Metodo),measure="PLO", method="DL")
 res2_Mastite<-rma(xi=sub2$Res,mi=sub2$Nao_Resistentes,mods=~factor(sub2$Mastite),measure="PLO", method="DL")
@@ -87,7 +69,7 @@ res2_pais<-rma(xi=sub2$Res,mi=sub2$Nao_Resistentes,mods=~factor(sub2$Pais),measu
 
 res2<-rma(xi=sub2$Res,mi=sub2$Nao_Resistentes,mods=~factor(sub2$Metodo)+factor(sub2$Pais),measure="PLO", method="DL")
 
-##regress?o_cefa##
+##regression_cefa##
 res3_ano<-rma(xi=sub3$Res,mi=sub3$Nao_Resistentes,mods=~sub3$ano,measure="PLO", method="DL")
 res3_metodo<-rma(xi=sub3$Res,mi=sub3$Nao_Resistentes,mods=~factor(sub3$Metodo),measure="PLO", method="DL")
 res3_Mastite<-rma(xi=sub3$Res,mi=sub3$Nao_Resistentes,mods=~factor(sub3$Mastite),measure="PLO", method="DL")
@@ -96,7 +78,7 @@ res3_pais<-rma(xi=sub3$Res,mi=sub3$Nao_Resistentes,mods=~factor(sub3$Pais),measu
 
 res2<-rma(xi=sub2$Res,mi=sub2$Nao_Resistentes,mods=~factor(sub2$Metodo)+factor(sub2$Pais),measure="PLO", method="DL")
 
-##regress?o_oxa##
+##regression_oxa##
 res4_ano<-rma(xi=sub4$Res,mi=sub4$Nao_Resistentes,mods=~sub4$ano,measure="PLO", method="DL")
 res4_metodo<-rma(xi=sub4$Res,mi=sub4$Nao_Resistentes,mods=~factor(sub4$Metodo),measure="PLO", method="DL")
 res4_Mastite<-rma(xi=sub4$Res,mi=sub4$Nao_Resistentes,mods=~factor(sub4$Mastite),measure="PLO", method="DL")
