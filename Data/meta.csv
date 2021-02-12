@@ -1,0 +1,57 @@
+Estudo;ano;Ano_realiz;Metodo;Mastite;set;Pais;Res;Nao_Resistentes;Total;Fr;ATB
+Wang;2008;2006;MIC;Clinic ;Conv;China;0;72;72;0;Oxa
+San Martin;2013;2001;MIC;Clinic ;Conv;Chile;165;470;635;0.26;Amp
+San Martin;2013;2001;MIC;Clinic ;Rand;Chile;182;453;635;0.288;Pen
+Kaspar;2006;2002;MIC;Clinic ;Rand;Germany;20;207;227;0.088;Amp
+Kaspar;2006;2002;MIC;Clinic ;Rand;Germany;15;212;227;0.066;Pen
+Kaspar;2006;2002;MIC;Clinic ;Rand;Germany;1;226;227;0.004;Cefa
+Kaspar;2006;2002;MIC;Clinic ;Rand;Germany;0;227;227;0;Oxa
+Kalmus;2011;2007;Difusion;Clinic ;Sec;Estonia;103;70;173;0.595;Amp
+Kalmus;2011;2007;Difusion;Clinic ;Sec;Estonia;107;67;174;0.614;Pen
+Kalmus;2011;2007;Difusion;Clinic ;Sec;Estonia;6;154;160;0.038;Cefa
+Haveri;2005;2005;MIC;Clinic ;Conv;Finland ;0;151;151;0;Oxa
+Haveri;2005;2005;MIC;Clinic ;Conv;Finland ;40;111;151;0.265;Pen
+Gao;2012;2012;MIC;;Conv;China;51;2;53;0.963;Pen
+Gao;2012;2012;MIC;;Conv;China;0;53;53;0;Oxa
+Bengtsson;2009;2002;MIC;Clinic ;Rand;Sweden;0;211;211;0;Cefa
+Bengtsson;2009;2002;MIC;Clinic ;Rand;Sweden;0;211;211;0;Oxa
+Bengtsson;2009;2002;MIC;Clinic ;Rand;Sweden;15;196;211;0.071;Pen
+Guerrin Faublee;2013;1998;MIC;Clinic ;Conv;France;53;66;119;0.445;Pen
+Russi;2008;1998;MIC;Clinic ;Conv;Argentina;0;25;25;0;Oxa
+Russi;2008;1998;MIC;Sub;Conv;Argentina;0;70;70;0;Oxa
+Mekonnen;2005;2005;Difusion;;Rand;Ethiopia;3;14;17;0.176;Amp
+Pourtaghi;2016;2016;Difusion;Sub;Conv;Iran;45;0;45;1;Pen
+Pourtaghi;2016;2016;Difusion;Sub;Conv;Iran;41;4;45;0.911;Amp
+Li;2009;2007;Difusion;Sub;Rand;China;58;17;75;0.773;Pen
+Li;2009;2007;Difusion;Sub;Rand;China;1;74;75;0.013;Oxa
+Li;2009;2007;Difusion;Sub;Rand;China;58;17;75;0.773;Amp
+Li;2009;2007;Difusion;Sub;Rand;China;0;75;75;0;Cefa
+Saini;2012;2011;MIC;Sub;Rand;Canada;20;542;562;0.036;Amp
+Saini;2012;2011;MIC;Sub;Rand;Canada;50;512;562;0.089;Pen
+Saini;2012;2011;MIC;Sub;Rand;Canada;0;562;562;0;Oxa
+Saini;2012;2011;MIC;Sub;Rand;Canada;0;562;562;0;Cefa
+Saini;2012;2011;MIC;Clinic ;Rand;Canada;6;556;562;0.011;Amp
+Saini;2012;2011;MIC;Clinic ;Rand;Canada;37;524;562;0.067;Pen
+Saini;2012;2011;MIC;Clinic ;Rand;Canada;0;562;562;0;Oxa
+Saini;2012;2011;MIC;Clinic ;Rand;Canada;0;562;562;0;Cefa
+Moroni;2006;2004;MIC;Sub;Rand;Italy;47;21;68;0.691;Pen
+Moroni;2006;2004;MIC;Sub;Rand;Italy;67;1;68;0.985;Amp
+Persson;2011;2011;MIC;Sub;Rand;Sweden;0;109;109;0;Oxa
+Persson;2011;2011;MIC;Sub;Rand;Sweden;4;105;109;0.04;Pen
+Turkyilmaz;2010;2004;MIC;Clinic ;Sec;Turkey;16;77;93;0.172;Oxa
+Oliveira;2012;2012;MIC;Clinic ;Rand;USA;2;56;58;0.034;Amp
+Oliveira;2012;2012;MIC;Clinic ;Rand;USA;0;58;58;0;Cefa
+Oliveira;2012;2012;MIC;Clinic ;Rand;USA;0;58;58;0;Oxa
+Oliveira;2012;2012;MIC;Clinic ;Rand;USA;2;56;58;0.034;Pen
+Oliveira;2012;2012;MIC;Sub;Rand;USA;4;54;58;0.069;Amp
+Oliveira;2012;2012;MIC;Sub;Rand;USA;2;56;58;0.034;Cefa
+Oliveira;2012;2012;MIC;Sub;Rand;USA;0;58;58;0;Oxa
+Oliveira;2012;2012;MIC;Sub;Rand;USA;6;52;58;0.103;Pen
+Pu;2014;2014;MIC;Clinic ;Conv;China;100;3;103;0.971;Pen
+Pu;2014;2014;MIC;Clinic ;Conv;China;13;90;103;0.126;Oxa
+Wang;2014;2011;Difusion;Clinic ;Conv;China;28;13;41;0.683;Amp
+Wang;2014;2011;Difusion;Clinic ;Conv;China;5;36;41;0.122;Oxa
+Wang;2014;2011;Difusion;Clinic ;Conv;China;28;13;41;0.683;Pen
+Wang;2014;2011;Difusion;Clinic ;Conv;China;0;41;41;0;Cefa
+Behiry;2012;2011;Difusion;Sub;Conv;Germany;48;8;56;0.8571;Pen
+Behiry;2012;2011;Difusion;Sub;Conv;Germany;0;56;56;0;Oxa
