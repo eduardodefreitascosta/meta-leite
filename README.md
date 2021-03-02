@@ -11,7 +11,7 @@ output: html_document
 
 https://www.brazilianjournals.com/index.php/BJAER/article/view/24650/19699
 
-Pissetti, C., Poeta Silva, A. P. S., Santiago Neto, W., Costa, E. F. (2021). *Staphylococcus aureus* resistant to β-lactam antibiotics in mastitis dairy herds: a meta-analysis. **Brazilian Journal of Animal and Environmental Research**, V. 4 (1), p, 772-788. DOI: 10.34188/bjaerv4n1-064.
+Pissetti, C., Poeta Silva, A. P. S., Santiago Neto, W., Costa, E. F. (2021). *Staphylococcus aureus* resistant to $\beta$-lactam antibiotics in mastitis dairy herds: a meta-analysis. **Brazilian Journal of Animal and Environmental Research**, V. 4 (1), p, 772-788. DOI: 10.34188/bjaerv4n1-064.
 
 
 ## To run the analysis: 
