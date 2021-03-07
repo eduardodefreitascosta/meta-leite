@@ -1,10 +1,11 @@
----
-title: "AMR meta-analysis in milk cows"
-author: "Eduardo de Freitas Costa, Caroline Pissetti, Ana Paula Serafini Poeta Silva, Waldemir Santiago Neto"
-date: "3-2-2021"
-output: html_document
----
-[![DOI](https://www.brazilianjournals.com/index.php/BJAER/article/view/24650/19699)](https://10.34188/bjaerv4n1-064)
+[![DOI](https://zenodo.org/badge/DOI/10.34188/bjaerv4n1-064.svg)](https://www.brazilianjournals.com/index.php/BJAER/article/view/24650/19699)
+
+
+# Title: 
+"AMR meta-analysis in milk cows"
+# Authors: 
+"Caroline Pissetti, Ana Paula Serafini Poeta Silva, Waldemir Santiago Neto and Eduardo de Freitas Costa"
+
 
 ## This is a meta-analysis of antimicrobial resistance to four antimicrobial agents in clinical and sub-clinical mastitis in cows.
 
