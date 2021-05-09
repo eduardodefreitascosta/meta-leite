@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.34188/bjaerv4n1-064.svg)](https://www.brazilianjournals.com/index.php/BJAER/article/view/24650/19699)
 
-[![DOI](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat)](https://www.brazilianjournals.com/index.php/BJAER/article/view/24650/19699)  
+[![DOI](https://img.shields.io/badge/DOI/10.34188/bjaerv4n1-064.svg?style=flat)](https://www.brazilianjournals.com/index.php/BJAER/article/view/24650/19699)  
 
 
 
